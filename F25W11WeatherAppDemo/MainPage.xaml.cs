@@ -5,6 +5,9 @@
         public MainPage()
         {
             InitializeComponent();
+
+            if (DeviceInfo.Platform == DevicePlatform.Android)
+                stack.Background = Brush.MediumPurple;
         }
 
         private async void OnGetWeatherBtnClicked(object sender, EventArgs e)
